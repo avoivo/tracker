@@ -17,6 +17,6 @@
   },
   "dependencies": {
     "@optimizely/optimizely-sdk": "^4.9.2",
-    "firebase": "^9.14.0"
+    "firebase": "^9.16.0"
   }
 }
