@@ -1,10 +1,11 @@
 import { ITrackEvent, ITracker, IUserProperties } from "./interfaces";
 import { FirebaseTracker, OptimizelyTracker } from "./implementations";
-import { firebaseOptions, optimizelyConfig } from "./config";
+import { FirebaseOptions } from 'firebase/app';
+import { Config } from "@optimizely/optimizely-sdk";
 
 export class Tracker implements ITracker {
   readonly trackers: ITracker[];
-  constructor() {
+  constructor(firebaseOptions: FirebaseOptions, optimizelyConfig: Config) {
     this.trackers = [
       new FirebaseTracker(firebaseOptions),
       new OptimizelyTracker(optimizelyConfig),
