@@ -9,14 +9,17 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
+    "build": "webpack",
     "prepare": "npm run build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.2",
-    "typescript": "^4.9.3"
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.3",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "dependencies": {
     "@optimizely/optimizely-sdk": "^4.9.2",
