@@ -19,7 +19,7 @@
     "typescript": "^4.9.3"
   },
   "dependencies": {
-    "@optimizely/optimizely-sdk": "^4.9.2",
-    "firebase": "^9.16.0"
+    "@optimizely/react-sdk": "^2.8.1",
+    "firebase": "9.6.11"
   }
 }
